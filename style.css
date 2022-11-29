@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family:  'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #97b4f3;
+}
+
+.wrapper{
+    background: white;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgb(0, 0, 0, 3),
+                O 32px 64px -48px rgb(0, 0, 0, 0.5);
+}
+ 
+/* Signup code*/
+.form{
+    padding: 25px 30px;
+}
+.form  header{
+    font-size: 25px;
+    font-weight: 600px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.form form{
+    margin: 20px 0;
+}
+
+.form form .error-txt{
+    color: #721c24;
+    background: #97b4f3;
+    padding: 8px 10px;
+    text-align: center;
+    border-bottom: -20px ;
+    display: none;
+    width: 100%;
+}
+
+.form form .name-details{
+    display: flex;
+}
+
+form .name-details .field:first-child{
+    margin-right: 20px;
+}
+
+form .name-details .field:last-child{
+    margin-left: 20px;
+}
+.form form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form form .field label{
+    margin-bottom: 2px;
+}
+.form form .field input{
+    outline:none ;
+}
+
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form form image input{
+    font-size: 17px;
+}
+.form form .button input{
+    margin-top: 13px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.form form .field i {
+position: absolute;
+right: 15px;
+color:#ccc;
+top: 70%;
+transform: translateY(-50%);
+cursor: pointer;
+}
+.form link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.form link a{
+    color: #333;
+}
+
+.form .link a:hover{
+    text-decoration: underline;
+}
+
+/*Users css*/
+.users {
+    padding: 25px 30px ;
+}
+.users header{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.wrapper{
+    overflow-y: auto;
+}
+.wrapper img{
+    object-fit:cover ;
+    border-radius: 50%;
+}
+
+.users header .content{
+    display: flex;
+}
+
+.users header .content img{
+    height: 50px;
+    width: 50px;
+}
+.users header .details{
+    margin-left: 15px;
+}
+
+.users header .details span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.users header .logout{
+    color: #fff;
+    font-size: 17px;
+    padding: 7px 15px;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.users .search{
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.users .search .text{
+  font-size: 18px;
+}
+
+.users .search input{
+    position: absolute;
+    height: 42px;
+    width: 300PX;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px  0 0 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    opacity: 1;
+    pointer-events: auto;
+}
+.users .search input .active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.users .search button{
+    width: 47px;
+    height: 42px;
+    border: none;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    background: #fff;
+    border-radius:0 5px 5px 0 ;
+    transition: all 0.2s ease;
+}
+.users .search button .active{
+    color: #fff;
+    background:#333;
+    transition: all 0.2s ease;
+}
+
+.users .search button .active img::before{
+    content:"\f00d";
+}
+.users-list a .content img{
+    height: 40px;
+    width: 40px;
+    position: relative;
+
+}
+.users-list a{
+    text-decoration: none;
+    padding-right: 15px;
+    color: #333;
+    page-break-after: 10px;
+    border-bottom-color: #F1F1F1;
+    
+}
+
+.users-list a:last-child{
+    border: none;
+    margin-bottom: Opx;
+}
+
+:is(.users-list,.chat-box)::-webkit-scrollbar{
+    width: 0px;
+}
+
+.users-list a .content p{
+    color: #67676a;
+    font-size: 12px;
+}
+.users-list .content{
+    padding-top:  15px;
+    display: flex;
+}
+
+.users-list   a .content img{
+    height: 50px;
+    width: 50px;
+}
+.users-list  .details{
+    margin-left: 15px;
+}
+
+.users-list  .details span{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.users-list a button{
+    position: relative;
+    margin-left: 350px;
+    bottom: 10px;
+    border: none;
+    padding-top: -70px;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: rgb(31, 80, 241);
+    border-radius:0 5px 5px 0 ;
+}
+
+/*on doit l'utiliser en php pr montrer que quelqu'un est offligne*/
+.users-list a button .offline{
+    color: #333;
+}
+
+/*Chat css*/
+
+.chat-area header{
+    
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+} 
+
+.chat-area header .back-icon{
+    font-size: 18px;
+    color:#333;
+}
+
+.chat-area header img{
+    height: 45px;
+    width: 45px;
+    margin: 0 15px;
+}
+
+.chat-area header span{
+    font-size: 18px;
+    font-weight: 500px ;
+}
+.chat-box{
+    height: 500px;
+    overflow-y: auto;
+    background:#F7f7f7;
+    padding:10px 30px 20px 30px;
+    box-shadow: inset 0 32px -32px -32px rgb(0 0 / 5%),
+                inset 0 -32px 32px -32px rgb(0 0 / 5%);
+   
+}
+
+.chat-box .chat{
+    margin: 15PX 0;
+}
+
+.chat-box .chat p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+    box-shadow: inset 0 32px -32px -32px rgb(0 0 / 5%),
+                inset 0 -32px 32px -32px rgb(0 0 / 5%);
+   
+}
+
+.chat-box .outgoing{
+    display:flex;
+}
+
+.outgoing .detail{
+    margin-left: auto;
+    max-width: 65%;
+}
+.outgoing .detail p{
+    background:#333;
+    color: #fff;
+    border-radius: 18px 18px 0px 18px;
+}
+
+.chat-box .incoming{
+    display: flex;
+    align-items: flex-end ;
+}
+.chat-box .incoming img{
+    height: 35px;
+    width: 35px;
+}
+
+.incoming .details{
+    margin-left:  10px;
+    margin-right: auto;
+    max-width: 65%;
+}
+
+.incoming .details p{
+    color: #333;
+    background: #fff;
+    border-radius: 18px 18px 18px 0;
+}
+
+.chat-area .typing-area{
+    padding: 18PX 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.typing-area input{
+    height: 45px;
+    width: 80%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding: 0 13px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.typing-area button{
+    border:none;
+    width: 55px;
+    background: rgb(224, 219, 219);
+    border-radius:0 5P 5P 0;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
